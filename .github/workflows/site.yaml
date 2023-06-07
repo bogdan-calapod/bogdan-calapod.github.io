@@ -5,7 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  build:
+    name: ⚙️ Build
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -17,8 +18,20 @@ jobs:
           extended: true
       - name: ⚙️ Build
         run: cd blog && hugo --minify
-      - name: 🚀 Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./blog/public
+          path: ./blog/public
+  deploy:
+    name: 🚀 Deploy
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 Deploy to Github Pages
+        uses: actions/deploy-pages@v2
