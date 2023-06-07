@@ -16,12 +16,9 @@ jobs:
           hugo-version: "0.101.0"
           extended: true
       - name: ⚙️ Build
-        run: hugo --minify
-        with:
-          working-directory: blog
+        run: cd blog && hugo --minify
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          working-directory: blog
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
