@@ -72,7 +72,7 @@ paginate = 5
   site = ""
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     languageName = "English"
     title = "{Keys and Values}"
     subtitle = "A blog about programming, tech and other things"
