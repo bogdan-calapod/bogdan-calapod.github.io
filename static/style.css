@@ -1,0 +1,4 @@
+/* Disable mobile menu */
+.menu-trigger {
+  display: none;
+}
