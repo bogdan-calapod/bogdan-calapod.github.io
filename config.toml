@@ -1,8 +1,5 @@
 baseurl = "/"
 languageCode = "en-us"
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
-# theme = "terminal"
 paginate = 5
 
 [params]
@@ -14,7 +11,7 @@ paginate = 5
   themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 0 
 
   # show selector to switch language
   showLanguageSelector = false
@@ -72,7 +69,7 @@ paginate = 5
     subtitle = "A blog about programming, tech and other things"
     owner = "Bogdan Calapod"
     keywords = "React, TypeScript, DevOps, WSL"
-    copyright = ""
+    copyright = "© {year}"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -87,11 +84,11 @@ paginate = 5
       logoText = "{Keys and Values}"
       logoHomeLink = "/"
 
-    [languages.en.menu]
-      # [[languages.en.menu.main]]
-      #   identifier = "about"
-      #   name = "About"
-      #   url = "/about"
+    # [languages.en.menu]
+    #   [[languages.en.menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about"
       # [[languages.en.menu.main]]
       #   identifier = "showcase"
       #   name = "Showcase"
