@@ -33,7 +33,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: bogdan-calapod.github.io
     runs-on: ubuntu-latest
     steps:
       - name: 🚀 Deploy to Github Pages
