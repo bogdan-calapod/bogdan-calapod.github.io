@@ -24,17 +24,6 @@ jobs:
       - name: 📤 Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "public/"
-  deploy:
-    name: 🚀 Deploy
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: "https://bogdan-calapod.github.io"
-    runs-on: ubuntu-latest
-    steps:
+          path: "./public/"
       - name: 🚀 Deploy to Github Pages
         uses: actions/deploy-pages@v2
