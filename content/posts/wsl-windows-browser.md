@@ -1,9 +1,9 @@
 ---
-title: "Make WSL links open in the default Windows browser"
+title: "🌍 Make WSL links open in the default Windows browser"
 date: 2023-06-08T09:14:23+02:00
 draft: false
 tags:
-  - 💡 Tips
+  - Tips
 ---
 
 A nice thing with WSL in Windows 11 is the fact that graphical applications are supported natively without too much fuss. However, this means that, if you have a browser installed in WSL, that browser will open by default whenever you trigger a link click from your WSL installation (for example, when using [`lazygit`](https://github.com/jesseduffield/lazygit)'s 'Create PR' option).

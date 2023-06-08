@@ -1,9 +1,9 @@
 ---
-title: "Sharing NeoVim Clipboard with WSL/Windows"
+title: "📋 Sharing NeoVim Clipboard with WSL/Windows"
 date: 2023-06-07T22:52:23+02:00
 draft: false
 tags:
-  - 💻 Development
+  - Development
 ---
 
 I recently switched my VSCode with RemoteWSL workflow to NeoVim with [LazyVim](https://www.lazyvim.org/). While I'm still working out the quirks and features, it has helped my typing and navigation speed a lot, nevermind the fact that the editor loads in an instant.
