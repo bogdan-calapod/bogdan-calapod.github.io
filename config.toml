@@ -1,4 +1,4 @@
-baseurl = "/bogdan-calapod/"
+baseurl = "/"
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
@@ -91,7 +91,7 @@ paginate = 5
 
     [languages.en.params.logo]
       logoText = "{Keys and Values}"
-      logoHomeLink = "/bogdan-calapod/"
+      logoHomeLink = "/"
 
     [languages.en.menu]
       # [[languages.en.menu.main]]
