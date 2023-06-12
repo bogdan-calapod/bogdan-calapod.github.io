@@ -2,6 +2,7 @@
 title: "🌍 Make WSL links open in the default Windows browser"
 date: 2023-06-08T09:14:23+02:00
 draft: false
+reading_time: 1
 tags:
   - Tips
 ---
