@@ -19,4 +19,4 @@ Editing that `sleep` there would take quite a few more keystrokes in the shell t
 
 Hitting the above keys will open your default editor (check `echo $EDITOR` to see which is it) with the command. Save it, close it and your edits will be available in your shell.
 
-There are many times when we have a long unwieldy command that we would like to edit somewhere in the middle, or reword part of it. This helps you quickly change what you want to do, all in the comfort of your editor.
+There are many times when we have a long unwieldy command that we would like to edit somewhere in the middle, or reword part of it. For example, this helps **_a lot_** when copying requests from the browser using the `Copy as cURL` command and then further editing the request parameters before sending. This helps you quickly change what you want to do, all in the comfort of your editor.
