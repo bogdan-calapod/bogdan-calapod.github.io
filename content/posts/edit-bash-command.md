@@ -1,12 +1,12 @@
-+++
-title = "📌 Edit your terminal command in editor"
-date = "2023-07-26T10:00:00"
-author = "Bogdan Marius Calapod"
-authorTwitter = "bogdanmariuscalapod"
-tags = ["quickbits"]
-keywords = ["shell", "tips"]
-showFullContent = true 
-+++
+---
+title: "📌 Edit your terminal command in editor"
+date: "2023-07-26T10:00:00"
+author: "Bogdan Marius Calapod"
+authorTwitter: "bogdanmariuscalapod"
+tags: ["quickbits"]
+keywords: ["shell", "tips"]
+showFullContent: true
+---
 
 Just found out from [this short video by Web Dev with Matt](https://www.youtube.com/watch?v=f9eVam6d_No) that you can edit your current command in your editor easily by hitting `Ctrl + X` followed by `Ctrl + E`.
 
