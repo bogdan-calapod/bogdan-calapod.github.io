@@ -1,6 +1,6 @@
 ---
 title: "Join Mp3 files with cat"
-date: 2023-08-5
+date: 2023-08-05
 draft: false
 tags:
   - QuickBits
