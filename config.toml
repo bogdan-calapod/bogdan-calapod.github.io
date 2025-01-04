@@ -1,103 +1,122 @@
+# This is what goes in <html lang="">
+languageCode = 'en-us'
+
+# This defines how dates are formatted
+defaultContentLanguage = "en-gb"
+
+# Enable emojis globally
+enableEmoji = true
+ignoreErrors = [
+  "additional-script-loading-error",
+] # ignore error of loading additional scripts.
+
+# traditional way: theme component resides in directory 'themes' 
+theme = "hugo-blog-awesome"
+
+# modern way: pull in theme component as hugo module
+#[module]
+# Uncomment the next line to build and serve using local theme clone declared in the named Hugo workspace:
+# workspace = "hugo-blog-awesome.work"
+#[module.hugoVersion]
+#extended = true
+#min = "0.87.0"
+#[[module.imports]]
+#path = "github.com/hugo-sid/hugo-blog-awesome"
+#disable = false
+
+[services]
+# To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
+# To disable Google Analytics, simply leave the field empty or remove the next two lines
+[services.googleAnalytics]
+id = '' # G-MEASUREMENT_ID
+
+# To enable Disqus comments, provide Disqus Shortname below.
+# To disable Disqus comments, simply leave the field empty or remove the next two lines
+[services.disqus]
+shortname = ''
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2  # ToC starts from H2
+endLevel = 4    # ToC ends at H4
+ordered = false # generates <ul> instead of <ol>
+
+[Languages.en-gb.menu]
+[[Languages.en-gb.menu.main]]
+# The page reference (pageRef) is useful for menu highlighting
+# When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+pageRef = "/"
+name = 'Home'
+url = '/'
+weight = 10
+[[Languages.en-gb.menu.main]]
+pageRef = "posts"
+name = 'Posts'
+url = '/posts/'
+weight = 20
+
+[Languages.en-gb.params]
+sitename = "Bogdan's blog"
+defaultColor = "auto"                        # set color mode: dark, light, auto
+description = "I'm Bogdan. This is my blog."
+
+mainSections = ['posts']
+toc = false              # set to false to disable table of contents 'globally'
+tocOpen = false          # set to true to open table of contents by default
+goToTop = true           # set to false to disable 'go to top' button
+
+[Languages.en-gb.params.author]
+avatar = "bogdan.jpg" # put the file in assets folder; also ensure that image has same height and width
+# Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+intro = "Bogdan's Blog"
+name = "Bogdan Calapod"
+description = "I'm Bogdan. This is my blog."
+
+# Allow to override webmanifest options
+[Languages.en-gb.params.webmanifest]
+start_url = "/"           # will use homepage url by default
+theme_color = "#434648"   # default is "#434648" (base color of text). Also will override html `<meta name="theme-color" />`
+background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
+display = "standalone"
+
+###################################################################
+
+# Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
+[params.browserconfig]
+TileColor = "#2d89ef" # default windows 10 blue tile color
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/bogdan-calapod"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/bogdanmcalapod"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"
 baseurl = "/"
 languageCode = "en-us"
-paginate = 5
 
-[params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  # contentTypeName = "posts"
+summaryLength = 5
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
+ignoreLogs = ['warning-goldmark-raw-html']
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 0 
-
-  # show selector to switch language
-  showLanguageSelector = false
-
-  # set theme to full screen width
-  fullWidthTheme = false 
-
-  # center theme with default width
-  centerTheme = true 
-
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
-
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true 
-  enableGitInfo = true
-
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
-
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
-
-  # set all headings to their default size (depending on browser settings)
-  # oneHeadingSize = true # default
-
-  # whether to show a page's estimated reading time
-  readingTime = true
-
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
-
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
-
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true 
-    lineNumbersInTable = false 
-    noClasses = true 
-    lineNos = false 
-    tabWidth = 2 
-    style = 'monokai'
-
-[languages]
-  [languages.en.params]
-    languageName = "English"
-    title = "{Keys and Values}"
-    subtitle = "A blog about programming, tech and other things"
-    owner = "Bogdan Calapod"
-    keywords = "React, TypeScript, DevOps, WSL"
-    copyright = "© {year}"
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "🤷‍♂️ Page not found..."
-    missingBackButtonLabel = "Back to home page"
-    minuteReadingTime = "min read"
-    words = "words"
-
-    [languages.en.params.logo]
-      logoText = "{Keys and Values}"
-      logoHomeLink = "/"
-
-    # [languages.en.menu]
-    #   [[languages.en.menu.main]]
-    #     identifier = "about"
-    #     name = "About"
-    #     url = "/about"
-      # [[languages.en.menu.main]]
-      #   identifier = "showcase"
-      #   name = "Showcase"
-      #   url = "/showcase"
+[pagination]
+pagerSize = 5
 
 [module]
-  # In case you would like to make changes to the theme and keep it locally in you repository,
-  # uncomment the line below (and correct the local path if necessary).
-  # --
-  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
+# In case you would like to make changes to the theme and keep it locally in you repository,
+# uncomment the line below (and correct the local path if necessary).
+# --
+# replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
 [[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal'
+path = 'github.com/martignoni/hugo-notice'
+[[module.imports]]
+path = "github.com/hugo-sid/hugo-blog-awesome"

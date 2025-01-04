@@ -1,5 +1,5 @@
 ---
-title: "Join Mp3 files with cat"
+title: "🎵 Join Mp3 files with cat"
 date: 2023-08-05
 draft: false
 tags:
@@ -10,6 +10,8 @@ tags:
 The `cat` command is useful for con`cat`enating (get it ?) various text files.
 
 But did you know you can also join MP3 files with it ?
+
+<!--more-->
 
 Just do something like this:
 

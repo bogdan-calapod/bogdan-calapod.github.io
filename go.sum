@@ -1,3 +1,7 @@
+github.com/hugo-sid/hugo-blog-awesome v1.19.0 h1:mKI+aTvXiFY6XSV/4VHdUsn82sL72Vh9OuBbYh3wy8U=
+github.com/hugo-sid/hugo-blog-awesome v1.19.0/go.mod h1:3XVERF66wgQpTsruOajS5Swr+uvyTzov1acafNaqm1E=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4 h1:lxS0B1ta9/uW+orrnvsGHMCC0TgN4DymEgdlb0PL/uU=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4/go.mod h1:MIQPOMgEcbyRC0gNLzQFSgrS+wIy3RuQ/HbaZYtTOKU=
 github.com/panr/hugo-theme-terminal v2.1.0+incompatible h1:oSqo5Q4lWiIcBDFaASgrCEdXaEtH43foBd/ti21MEGE=
 github.com/panr/hugo-theme-terminal v2.1.0+incompatible/go.mod h1:kiO0NHUXPNrG6BFRlat5jc078p3e1f2sLlpt0a23MEY=
 github.com/panr/hugo-theme-terminal/v3 v3.1.2 h1:DZXzAabj8zG/9k6kSE9uQLtJUoPGA5KiSeiBbni3oHM=
