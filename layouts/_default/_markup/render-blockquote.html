@@ -1,0 +1,22 @@
+{{- $alertTypes := dict 
+    "note" (dict "icon" "info-circle" "class" "note")
+    "tip" (dict "icon" "lightbulb" "class" "tip")
+    "important" (dict "icon" "exclamation-circle" "class" "important")
+    "warning" (dict "icon" "exclamation-triangle" "class" "warning")
+    "caution" (dict "icon" "ban" "class" "caution")
+-}}
+
+{{- if eq .Type "alert" }}
+  {{- $alertType := .AlertType | lower }}
+  {{- $config := index $alertTypes $alertType | default (dict "icon" "info-circle" "class" "note") }}
+  <div class="alert alert-{{ $config.class }}">
+    <p class="alert-title">
+      {{ .AlertTitle | default (title $alertType) }}
+    </p>
+    {{ .Text }}
+  </div>
+{{- else }}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{- end }}
