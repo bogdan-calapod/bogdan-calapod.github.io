@@ -86,6 +86,10 @@ display = "standalone"
 
 ###################################################################
 
+# Additional JS scripts loaded at the end of body
+[params]
+additionalScripts = ['js/copy-code.js']
+
 # Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
 [params.browserconfig]
 TileColor = "#2d89ef" # default windows 10 blue tile color

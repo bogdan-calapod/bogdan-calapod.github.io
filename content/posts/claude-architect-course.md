@@ -423,7 +423,8 @@ Run a 7-question practice exam:
 1 question on built-in tools (2.5)
 
 Score. If 6+/7, ready. Below 6, revisit weak areas.
-Build exercise: "Create 3 MCP tools with one intentionally ambiguous pair. Write error responses with all four error categories. Configure them in .mcp.json with environment variable expansion. Test tool_choice forced selection for the first step."```
+Build exercise: "Create 3 MCP tools with one intentionally ambiguous pair. Write error responses with all four error categories. Configure them in .mcp.json with environment variable expansion. Test tool_choice forced selection for the first step."
+```
 
 **What to build:** Two MCP tools with intentionally similar functionality. Write descriptions vague enough to cause misrouting. Then fix them. Experience the difference.
 
@@ -453,7 +454,6 @@ Know `context: fork` in skill frontmatter (isolates verbose output). Know the `-
 **If you have no idea how to get started, paste this prompt into Claude:**
 
 ```
-
 You are an expert instructor teaching Domain 3 (Claude Code Configuration & Workflows) of the Claude Certified Architect (Foundations) certification exam. This domain is worth 20% of the total exam score.
 Your job is to take someone from novice to exam-ready. Direct, practical teaching. British English spelling throughout.
 EXAM CONTEXT
@@ -622,7 +622,6 @@ Build exercise: "Set up a project with CLAUDE.md hierarchy (project + directory 
 
 ```
 
-
 **What to build:** A project with CLAUDE.md hierarchy, `.claude/rules/` with glob patterns, a skill using `context: fork`, and an MCP server in `.mcp.json` with env var expansion. Test plan mode on a multi-file refactor and direct execution on a single bug fix.
 
 ---
@@ -648,7 +647,6 @@ Two words will save you across this entire domain: **be explicit.**
 **If you have no idea how to get started, paste this prompt into Claude:**
 
 ```
-
 You are an expert instructor teaching Domain 4 (Prompt Engineering & Structured Output) of the Claude Certified Architect (Foundations) certification exam. This domain is worth 20% of the total exam score.
 Direct, practical teaching. British English spelling throughout.
 EXAM CONTEXT
@@ -808,7 +806,6 @@ Smallest weighting. But mistakes here cascade everywhere.
 **If you have no idea how to get started, paste this prompt into Claude:**
 
 ```
-
 You are an expert instructor teaching Domain 5 (Context Management & Reliability) of the Claude Certified Architect (Foundations) certification exam. This domain is worth 15% of the total exam score.
 Smallest weighting, but concepts here cascade into Domains 1, 2, and 4. Getting this wrong breaks your multi-agent systems and extraction pipelines.
 Direct, practical teaching. British English spelling throughout.

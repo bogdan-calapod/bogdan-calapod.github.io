@@ -84,6 +84,58 @@ body.dark {
   }
 }
 
+/* Code block wrapper with copy button */
+.code-block-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background-color: #1a1b21;
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 1rem;
+  background-color: #2a2b33;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.code-block-lang {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.copy-code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
 /* Also support prefers-color-scheme for auto mode */
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
