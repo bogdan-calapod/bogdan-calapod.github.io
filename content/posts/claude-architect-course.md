@@ -1,5 +1,5 @@
 ---
-title: "Claude Architect Course"
+title: "✨ I Want to Become a Claude Architect (Full Course) by hoem"
 date: 2026-05-22T19:27:40+03:00
 draft: false
 ---
